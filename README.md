@@ -18,7 +18,7 @@ Le projet inclut :
 - 🔹 **Rapport détaillé** au format Markdown
 
 ## 📂 Structure du repository
-📂 retraite-ponzi-analysis 
+📂 backtest_retraites 
 │── 📂 data/            # Contient les fichiers CSV (sources et transformés) 
     │──📂 raw/          # Données brutes non modifiées (sources externes)
     │── 📂 processed/   # Données transformées prêtes pour l'analyse
