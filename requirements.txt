@@ -1,0 +1,12 @@
+# requirements.txt — Dépendances Python pour le projet Backtest Retraite
+
+pandas==2.2.1
+numpy==1.26.4
+matplotlib==3.8.3
+seaborn==0.13.2
+plotly==5.21.0
+scikit-learn==1.4.1
+jupyterlab==4.1.5
+notebook==7.1.2
+openpyxl==3.1.2
+xlrd==2.0.1
