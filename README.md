@@ -13,7 +13,7 @@ L’objectif est de démontrer, avec des **données concrètes** et une méthodo
 
 ---
 
-## 🎯 Partis Pris & Hypothèses Conservatrices
+## 🎯 Partis Pris & Hypothèses
 
 Ce projet repose sur une série de **choix méthodologiques prudents** afin d’éviter toute surestimation des performances d’un modèle capitalisé. Il s’agit de montrer que **même dans un scénario conservateur**, la capitalisation aurait surperformé la répartition.
 
