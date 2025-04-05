@@ -1,8 +1,8 @@
 # Analyse en "Backtest" d'un hypothétique système de retraites par capitalisation en France
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/Vincent-20-100/backtest_retraites)](https://github.com/Vincent-20-100/retraite-ponzi-analysis/issues)
-[![GitHub stars](https://img.shields.io/github/stars/Vincent-20-100/backtest_retraites?style=social)](https://github.com/ton-profil/retraite-ponzi-analysis/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/Vincent-20-100/backtest_retraites)](https://github.com/Vincent-20-100/backtest_retraites)
+[![GitHub stars](https://img.shields.io/github/stars/Vincent-20-100/backtest_retraites?style=social)](https://github.com/ton-profil/backtest_retraites/stargazers)
 
 ---
 
