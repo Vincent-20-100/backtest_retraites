@@ -26,8 +26,7 @@ Pour y répondre, une simulation rigoureuse a été menée, sur **40 années de 
 - 🟩 **Profil dynamique** : 75% actions / 25% obligations
 
 ### Retraite simulée :
-- Conversion du capital en pension via un **taux de retrait annuel** de :
-  - **9%** du capital, calculé pour assurer un fonds soutenable sur une durée moyenne de retraite de **25 ans**
+- Conversion du capital en pension via un **taux de retrait annuel** de **9%** du capital, calculé pour assurer un fonds soutenable sur une durée moyenne de retraite de **25 ans** (moyenne actuelle).
 
 ### Redistribution :
 - Hypothèse d’un **prélèvement de solidarité** pour financer une pension minimale universelle (basé sur les chiffre actuels de l'ASPA  et l'ASV).
@@ -44,16 +43,16 @@ Pour y répondre, une simulation rigoureuse a été menée, sur **40 années de 
 | **CAC 40 TR**        | ×32                       | 9,06 %               |
 | **WGBI (oblig.)**    | ×5                        | 4,44 %               |
 
-### 💰 Capital final accumulé (vs retraite publique)
+### 💰 Capital et pensions estimées
 
 | Type de portefeuille | Capital final            | Pension estimée       | Multiplicateur (vs retraite actuelle) |
 |----------------------|--------------------------|-----------------------|---------------------------------------|
-| Prudent (50/50)      | ~580                     | ~4900€                | **~x3**                               |
-| Dynamique (75/25)    | ~820                     | ~7300€                | **~x5**                               |
+| Prudent (50/50)      | ~580                     | ~3600 - 6200€         | **~x3**                               |
+| Dynamique (75/25)    | ~820                     | ~4700 - 10000€        | **~x5**                               |
 
 Ces résultats tiennent compte de l’augmentation des salaire et des taux de prélèvements historiques et sont simulés avec une grande prudence : pas de levier, pas d’investissement exotique, pas de stock-picking.
 
-### 💰 Capital final accumulé (comparé au système actuel)
+### 👑 Taille du fond souverain estimée
 Le système français actuel repose sur une logique de redistribution immédiate : les cotisations des actifs servent directement à payer les pensions des retraités.  \
 Ce modèle ne constitue aucune réserve, et ne laisse aucune marge de manœuvre en cas de choc démographique ou économique.
 
