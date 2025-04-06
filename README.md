@@ -19,7 +19,7 @@ Avant d'explorer les notebooks ou de plonger dans le code, commencez par lire le
 
 👉 [📘 Lire le rapport final](docs/Rapport.md)
 
-Ce document constitue la **vue d'ensemble essentielle** du projet, pensée pour un public large — citoyens curieux, économistes, décideurs ou journalistes — et permet de comprendre les conclusions **avant de décortiquer la méthode** dans les notebooks.
+Ce document constitue la **vue d'ensemble essentielle** du projet, pensée pour un public large ; citoyens curieux, économistes, décideurs ou journalistes et permet de comprendre les conclusions **avant de décortiquer la méthode** dans les notebooks.
 
 ---
 
@@ -28,17 +28,17 @@ Ce document constitue la **vue d'ensemble essentielle** du projet, pensée pour 
 Ce projet repose sur une série de **choix méthodologiques prudents** afin d’éviter toute surestimation des performances d’un modèle capitalisé. Il s’agit de montrer que **même dans un scénario conservateur**, la capitalisation aurait surperformé la répartition.
 
 ### Hypothèses retenues :
-- ✅ Utilisation du **CAC 40 TR** comme proxy d’un fonds souverain français (scénario conservateur).
-- ✅ Utilisation du **S&P 500 TR** comme scénario optimiste, pour illustrer les effets d’un modèle capitalisé performant.
-- ✅ Taux de cotisation fixe sur 40 ans, sans optimisation.
-- ✅ Hypothèse de retrait de **9 %** pour une soutenabilité sur 25ans (retraite moyenne).
-- ✅ Aucune prise en compte des **frais de gestion** ni de **l’inflation**.
-- ✅ **Backfill du CAC 40 TR** entre 1985 et 1990 par régression multivariée (S&P500 + FTSE100).
-- ✅ Utilisation du **WGBI** comme proxy obligataire (faute de données françaises longues).
+- Utilisation du CAC 40 TR comme proxy d’un fonds souverain français (scénario conservateur).
+- Utilisation du S&P 500 TR comme proxy de performance haute — non pas pour idéaliser les rendements américains, mais pour représenter une trajectoire réaliste qu’aurait pu suivre un CAC 40 soutenu par des décennies de capitalisation massive. Ce choix permet d’estimer une fourchette haute crédible, dans l’hypothèse où un fonds souverain français aurait contribué à surcapitaliser durablement les entreprises nationales.
+- Taux de cotisation fixe sur 40 ans, sans optimisation ni arbitrage.
+- Hypothèse de retrait prudente : 9 %, calibrée sur une durée moyenne de retraite (25 ans).
+- Prise en compte de 0,5% de frais de gestion.
+- Backfill du CAC 40 TR entre 1985 et 1990 (données manquantes).
+- Utilisation du WGBI comme proxy obligataire (faute de données françaises longues).
 
 ### Effets bénéfiques non modélisés (mais potentiellement favorables) :
-- 📈 Surcapitalisation des entreprises françaises (effet macroéconomique positif non modélisé).
-- 📉 Réduction possible des cotisations grâce à la performance, pouvant stimuler la croissance et l’emploi.
+- Surcapitalisation des entreprises françaises via l’épargne retraite (effet macro positif absent du modèle).
+- Réduction potentielle des cotisations grâce à la performance, stimulant la consommation, l’épargne libre, ou l’emploi.
 
 ---
 
@@ -47,7 +47,7 @@ Le projet inclut :
 - 🔹 **Analyse des données financières** (actions, obligations, salaires)
 - 🔹 **Backtesting de portefeuilles** avec différentes allocations (50/50, 75/25)
 - 🔹 **Comparaison des pensions** perçues sous différents modèles
-- 🔹 **Visualisations** en Python (Matplotlib, Seaborn, Plotly)
+- 🔹 **Visualisations** en Python
 - 🔹 **Rapport détaillé** au format Markdown
 
 ---
@@ -60,10 +60,8 @@ Le projet inclut :
 │   │── 📂 final/       # Données finales utilisées pour les résultats  
 │── 📂 notebooks/       # Contient les Jupyter Notebooks (analyses et visualisations)  
 │── 📂 scripts/         # Contient les scripts Python utilisés pour l’analyse  
-│── 📂 docs/            # Documentation et rapport du projet (Markdown)  
+│── 📂 docs/            # Documentation et rapport du projet (Markdown, PDF)  
 │── 📄 README.md        # Présentation du projet  
-│── 📄 Rapport.md       # Rapport final (résultats et conclusions)  
-│── 📄 Résumé.md        # Résumé du rapport  
 │── 📄 LICENSE          # Licence MIT  
 │── 📄 requirements.txt # Liste des dépendances Python  
 │── 📄 .gitignore       # Exclusion des fichiers inutiles
