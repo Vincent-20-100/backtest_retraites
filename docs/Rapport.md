@@ -70,10 +70,10 @@ Un tel stock de capital permettrait d’assurer une soutenabilité structurelle,
 ## 3. 📊 Visualisations clés
 
 ### Performance des différents portefeuilles
-![SP500](../charts\perf_portefeuilles.png)
+![SP500](../charts/perf_portefeuilles.png)
 
 ### Comparaison des pensions versées selon les modèles
-![SP500](../charts\comparaison_pensions_2.png)
+![SP500](../charts/comparaison_pensions_2.png)
 
 ---
 
