@@ -33,7 +33,7 @@ Pour y répondre, une simulation rigoureuse a été menée, sur **40 années de 
 
 ---
 
-2. 🎯 Partis pris & Hypothèses
+## 2. 🎯 Partis pris & Hypothèses
 
 Ce projet repose sur une série de choix méthodologiques prudents afin d’éviter toute surestimation des performances d’un modèle capitalisé. Il s’agit de montrer que même dans un scénario conservateur, la capitalisation aurait surperformé la répartition.
 
