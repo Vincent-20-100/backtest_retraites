@@ -33,7 +33,35 @@ Pour y répondre, une simulation rigoureuse a été menée, sur **40 années de 
 
 ---
 
-## 2. 📈 Résultats clés
+2. 🎯 Partis pris & Hypothèses
+
+Ce projet repose sur une série de choix méthodologiques prudents afin d’éviter toute surestimation des performances d’un modèle capitalisé. Il s’agit de montrer que même dans un scénario conservateur, la capitalisation aurait surperformé la répartition.
+
+Hypothèses retenues :
+
+✅ Utilisation du CAC 40 TR comme proxy d’un fonds souverain français (scénario conservateur).
+
+✅ Utilisation du S&P 500 TR comme scénario optimiste, non pas pour fantasmer un rendement américain, mais pour représenter un portefeuille mondialisé performant tel que celui qu’un fonds souverain aurait pu viser.
+
+✅ Taux de cotisation fixe sur 40 ans, sans optimisation ni arbitrage.
+
+✅ Hypothèse de retrait prudente : 9 %, calibrée sur une durée moyenne de retraite (25 ans).
+
+✅ Aucune prise en compte des frais de gestion ni de l’inflation (neutralisation simplificatrice).
+
+✅ Backfill du CAC 40 TR entre 1985 et 1990 par régression multivariée (S&P500 + FTSE100).
+
+✅ Utilisation du WGBI comme proxy obligataire (faute de données françaises longues).
+
+Effets bénéfiques non modélisés (mais potentiellement favorables) :
+
+📈 Surcapitalisation des entreprises françaises via l’épargne retraite (effet macro positif absent du modèle).
+
+📉 Réduction potentielle des cotisations grâce à la performance, stimulant la consommation, l’épargne libre, ou l’emploi.
+
+---
+
+## 3. 📈 Résultats clés
 
 ### 📊 Performance des marchés (1985–2025)
 
@@ -66,7 +94,7 @@ Un tel stock de capital permettrait d’assurer une soutenabilité structurelle,
 
 ---
 
-## 3. 📊 Visualisations clés
+## 4. 📊 Visualisations clés
 
 ### Performance des différents portefeuilles
 ![SP500](../charts/perf_portefeuilles.png)
@@ -76,7 +104,7 @@ Un tel stock de capital permettrait d’assurer une soutenabilité structurelle,
 
 ---
 
-## 4. 🧠 Interprétation des résultats
+## 5. 🧠 Interprétation des résultats
 
 ### ✔️ Ce que démontre la simulation
 - La capitalisation **crée un stock de richesse** au fil du temps, grâce aux intérêts composés et à la croissance des actifs.
@@ -117,7 +145,7 @@ Contrairement aux politiques de relance monétaire (QE, dettes publiques, taux b
 
 ---
 
-## 5. 📣 À qui s’adresse ce rapport ?
+## 6. 📣 À qui s’adresse ce rapport ?
 
 Ce rapport s’adresse avant tout :
 
@@ -132,7 +160,7 @@ Ce rapport s’adresse avant tout :
 
 ---
 
-## 6. 🔍 Pour aller plus loin
+## 7. 🔍 Pour aller plus loin
 
 ### 📂 Le code, les données, les visualisations et les hypothèses sont 100% open-source :
 
