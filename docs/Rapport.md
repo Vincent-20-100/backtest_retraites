@@ -2,13 +2,21 @@
 
 ## 🧭 Pourquoi ce rapport ?
 
-Alors que la question des retraites revient sans cesse dans le débat public, ce rapport propose autre chose qu’une énième réforme paramétrique.
+La question des retraites agite régulièrement le débat public en France. Les réformes se succèdent, souvent techniques, toujours conflictuelles. Pourtant, un angle reste systématiquement évité : celui d’un **changement de modèle structurel**.
 
-Il pose une question simple :
+Ce rapport ne propose pas une énième réforme des paramètres existants.  
+Il explore **une alternative complète** :  
+> *Et si, depuis 1985, les cotisations retraite avaient été capitalisées plutôt que redistribuées ?*
 
-> Que se serait-il passé si les cotisations retraite avaient été investies chaque mois, plutôt que redistribuées immédiatement ?
+Autrement dit : que se serait-il passé si chaque salarié avait vu ses cotisations placées, mois après mois, dans un fonds commun investi dans l’économie réelle — plutôt que de financer directement les pensions actuelles ?
 
-Pour y répondre, une simulation rigoureuse a été menée, sur **40 années de données économiques** (1985 à 2025). Le but : comparer factuellement les résultats d’un système **par capitalisation** avec ceux du modèle **par répartition** utilisé aujourd’hui en France.
+Pour répondre à cette question, une **simulation rigoureuse** a été conduite à partir de **40 années de données économiques réelles** (1985–2025), en comparant deux approches :  
+- Le système **par répartition** actuellement en vigueur,  
+- Et un système **par capitalisation**, tel qu’il aurait pu être mis en place dès 1985 sous la forme d'un fond souverain.
+
+Ce rapport vise à fournir **des ordres de grandeur concrets**, lisibles et vérifiables, pour éclairer un débat trop souvent idéologique.
+
+> Car comprendre ce qui aurait pu être, c’est déjà mieux choisir ce qui peut encore advenir.
 
 ---
 
@@ -22,8 +30,8 @@ Pour y répondre, une simulation rigoureuse a été menée, sur **40 années de 
 - **40 ans d’épargne continue**, de janvier 1985 à décembre 2024.
 
 ### Portefeuilles testés :
-- 🟦 **Profil prudent** : 50% actions / 50% obligations
-- 🟩 **Profil dynamique** : 75% actions / 25% obligations
+- **Profil prudent** : 50% actions / 50% obligations
+- **Profil dynamique** : 75% actions / 25% obligations
 
 ### Retraite simulée :
 - Conversion du capital en pension via un **taux de retrait annuel** de **9%** du capital, calculé pour assurer un fonds soutenable sur une durée moyenne de retraite de **25 ans** (moyenne actuelle).
@@ -38,26 +46,17 @@ Pour y répondre, une simulation rigoureuse a été menée, sur **40 années de 
 Ce projet repose sur une série de choix méthodologiques prudents afin d’éviter toute surestimation des performances d’un modèle capitalisé. Il s’agit de montrer que même dans un scénario conservateur, la capitalisation aurait surperformé la répartition.
 
 Hypothèses retenues :
-
-✅ Utilisation du CAC 40 TR comme proxy d’un fonds souverain français (scénario conservateur).
-
-✅ Utilisation du S&P 500 TR comme scénario optimiste, non pas pour fantasmer un rendement américain, mais pour représenter un portefeuille mondialisé performant tel que celui qu’un fonds souverain aurait pu viser.
-
-✅ Taux de cotisation fixe sur 40 ans, sans optimisation ni arbitrage.
-
-✅ Hypothèse de retrait prudente : 9 %, calibrée sur une durée moyenne de retraite (25 ans).
-
-✅ Aucune prise en compte des frais de gestion ni de l’inflation (neutralisation simplificatrice).
-
-✅ Backfill du CAC 40 TR entre 1985 et 1990 par régression multivariée (S&P500 + FTSE100).
-
-✅ Utilisation du WGBI comme proxy obligataire (faute de données françaises longues).
+- Utilisation du CAC 40 TR comme proxy d’un fonds souverain français (scénario conservateur).
+- Utilisation du S&P 500 TR comme proxy de performance haute — non pas pour idéaliser les rendements américains, mais pour représenter une trajectoire réaliste qu’aurait pu suivre un CAC 40 soutenu par des décennies de capitalisation massive. Ce choix permet d’estimer une fourchette haute crédible, dans l’hypothèse où un fonds souverain français aurait contribué à surcapitaliser durablement les entreprises nationales.
+- Taux de cotisation fixe sur 40 ans, sans optimisation ni arbitrage.
+- Hypothèse de retrait prudente : 9 %, calibrée sur une durée moyenne de retraite (25 ans).
+- Prise en compte de 0,5% de frais de gestion.
+- Backfill du CAC 40 TR entre 1985 et 1990 (données manquantes).
+- Utilisation du WGBI comme proxy obligataire (faute de données françaises longues).
 
 Effets bénéfiques non modélisés (mais potentiellement favorables) :
-
-📈 Surcapitalisation des entreprises françaises via l’épargne retraite (effet macro positif absent du modèle).
-
-📉 Réduction potentielle des cotisations grâce à la performance, stimulant la consommation, l’épargne libre, ou l’emploi.
+- Surcapitalisation des entreprises françaises via l’épargne retraite (effet macro positif absent du modèle).
+- Réduction potentielle des cotisations grâce à la performance, stimulant la consommation, l’épargne libre, ou l’emploi.
 
 ---
 
