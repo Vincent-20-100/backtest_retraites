@@ -16,7 +16,7 @@ Pour y répondre, une simulation rigoureuse a été menée, sur **40 années de 
 
 ### Cotisation :
 - Basée sur le **salaire médian** français (source INSEE).
-- Montant prélevé chaque mois selon les **taux de cotisation légaux actuels**.
+- Montant prélevé chaque mois selon les **taux de cotisation historiques.**.
 
 ### Durée :
 - **40 ans d’épargne continue**, de janvier 1985 à décembre 2024.
