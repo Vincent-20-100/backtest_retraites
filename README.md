@@ -13,6 +13,16 @@ L’objectif est de démontrer, avec des **données concrètes** et une méthodo
 
 ---
 
+## 👀 Rapport final à lire en priorité
+
+Avant d'explorer les notebooks ou de plonger dans le code, commencez par lire le **rapport final** qui résume les résultats, les implications et les grands enseignements de l'étude, **sans jargon technique** :
+
+👉 [📘 Lire le rapport final](docs/Rapport.md)
+
+Ce document constitue la **vue d'ensemble essentielle** du projet, pensée pour un public large — citoyens curieux, économistes, décideurs ou journalistes — et permet de comprendre les conclusions **avant de décortiquer la méthode** dans les notebooks.
+
+---
+
 ## 🎯 Partis Pris & Hypothèses
 
 Ce projet repose sur une série de **choix méthodologiques prudents** afin d’éviter toute surestimation des performances d’un modèle capitalisé. Il s’agit de montrer que **même dans un scénario conservateur**, la capitalisation aurait surperformé la répartition.
@@ -52,6 +62,8 @@ Le projet inclut :
 │── 📂 scripts/         # Contient les scripts Python utilisés pour l’analyse  
 │── 📂 docs/            # Documentation et rapport du projet (Markdown)  
 │── 📄 README.md        # Présentation du projet  
+│── 📄 Rapport.md       # Rapport final (résultats et conclusions) 
+│── 📄 Résumé.md        # Résumé du rapport 
 │── 📄 LICENSE          # Licence MIT  
 │── 📄 requirements.txt # Liste des dépendances Python  
 │── 📄 .gitignore       # Exclusion des fichiers inutiles
