@@ -48,7 +48,7 @@ Ce projet repose sur une série de choix méthodologiques prudents afin d’évi
 Hypothèses retenues :
 - Utilisation du CAC 40 TR comme proxy d’un fonds souverain français (scénario conservateur).
 - Utilisation du S&P 500 TR comme proxy de performance haute — non pas pour idéaliser les rendements américains, mais pour représenter une trajectoire réaliste qu’aurait pu suivre un CAC 40 soutenu par des décennies de capitalisation massive. Ce choix permet d’estimer une fourchette haute crédible, dans l’hypothèse où un fonds souverain français aurait contribué à surcapitaliser durablement les entreprises nationales.
-- Taux de cotisation fixe sur 40 ans, sans optimisation ni arbitrage.
+- Taux de cotisation historiques (source INSEE).
 - Hypothèse de retrait prudente : 9 %, calibrée sur une durée moyenne de retraite (25 ans).
 - Prise en compte de 0,5% de frais de gestion.
 - Backfill du CAC 40 TR entre 1985 et 1990 (données manquantes).
