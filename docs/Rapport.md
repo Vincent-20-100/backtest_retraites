@@ -24,7 +24,7 @@ Ce rapport vise à fournir **des ordres de grandeur concrets**, lisibles et vér
 
 ### Cotisation :
 - Basée sur le **salaire médian** français (source INSEE).
-- Montant prélevé chaque mois selon les **taux de cotisation historiques.**.
+- Montant prélevé chaque mois selon les **taux de cotisation historiques.**
 
 ### Durée :
 - **40 ans d’épargne continue**, de janvier 1985 à décembre 2024.
@@ -55,7 +55,7 @@ Hypothèses retenues :
 - Utilisation du WGBI comme proxy obligataire (faute de données françaises longues).
 
 Effets bénéfiques non modélisés (mais potentiellement favorables) :
-- Surcapitalisation des entreprises françaises via l’épargne retraite (effet macro positif absent du modèle).
+- Surcapitalisation des entreprises françaises via l’épargne retraite (effet macro positif absent du modèle, comme la hausse du salaire médian).
 - Réduction potentielle des cotisations grâce à la performance, stimulant la consommation, l’épargne libre, ou l’emploi.
 
 ---
@@ -72,10 +72,12 @@ Effets bénéfiques non modélisés (mais potentiellement favorables) :
 
 ### 💰 Capital et pensions estimées
 
-| Type de portefeuille | Capital final            | Pension estimée       | Multiplicateur (vs retraite actuelle) |
-|----------------------|--------------------------|-----------------------|---------------------------------------|
-| Prudent (50/50)      | ~580                     | ~3600 - 6200€         | **~x3**                               |
-| Dynamique (75/25)    | ~820                     | ~4700 - 10000€        | **~x5**                               |
+| Type de portefeuille  | Capital final            | Pension estimée       | Multiplicateur (vs retraite actuelle) |
+|-----------------------|--------------------------|-----------------------|---------------------------------------|
+| CAC 40 / WGBI (50/50) | 484 000 €                | ~3600                 | **~x2.2**                             |
+| CAC 40 / WGBI (75/25) | 591 000 €                | ~4700                 | **~x2.9**                             |
+| S&P 500 / WGBI (50/50)| 692 000 €                | ~6200€                | **~x3.9**                             |
+| S&P 500 / WGBI (75/25)| 1 049 000 €              | ~10000€               | **~x6.2**                             |
 
 Ces résultats tiennent compte de l’augmentation des salaire et des taux de prélèvements historiques et sont simulés avec une grande prudence : pas de levier, pas d’investissement exotique, pas de stock-picking.
 
@@ -165,7 +167,6 @@ Ce rapport s’adresse avant tout :
 
 👉 GitHub : [github.com/Vincent-20-100/backtest_retraites](https://github.com/Vincent-20-100/backtest_retraites)
 
----
 
 > « Ce qui est investi, fructifie. Ce qui est redistribué, disparaît. »
 
@@ -174,3 +175,40 @@ Face aux impasses comptables du système actuel, la capitalisation offre une **a
 Il est temps de remettre les faits au cœur du débat.
 
 ---
+
+## 8. 🔧 Pistes d'amélioration du modèle
+
+Ce rapport se veut une première exploration rigoureuse, mais perfectible. Plusieurs pistes pourraient enrichir ou affiner la simulation actuelle :
+
+1. **Diversification des profils simulés**  
+   Le modèle repose actuellement sur un profil médian unique. Il serait pertinent d’introduire :
+   - Un **salarié au SMIC**, pour estimer les effets redistributifs nécessaires.
+   - Un **profil du dernier quartile**, afin d’évaluer la contribution et la pension attendue des salaires plus élevés.
+   - Un **travailleur indépendant** ou un **agent public**, dont les régimes et trajectoires de cotisation diffèrent.
+
+2. **Alignement avec une estimation réelle de retraite**  
+   La comparaison repose sur une pension médiane, qui ne reflète pas nécessairement la pension d’un profil ayant exactement le parcours simulé (salaire médian, carrière complète). Une estimation plus fine pourrait être obtenue via :
+   - Le **simulateur officiel** (ex. [info-retraite.fr](https://www.info-retraite.fr/)).
+   - Une **modélisation interne des trimestres et règles de calcul du régime actuel**.
+
+3. **Optimisation des allocations**  
+   Les portefeuilles testés (50/50 et 75/25) sont fixes dans le temps. Des alternatives dynamiques pourraient être testées :
+   - **Allocations évolutives avec l’âge** (plus agressives en début de carrière, plus prudentes à l’approche de la retraite).
+   - **Rééquilibrage annuel**, pour refléter une gestion pilotée type fonds souverain.
+
+4. **Intégration du risque de change**  
+   Les indices S&P 500 et WGBI sont exprimés en dollars. Une approche plus réaliste pour un cotisant en euros pourrait inclure :
+   - La **conversion des rendements historiques en euros** via le taux de change EUR/USD.
+   - L’utilisation d’indices comparables européens exprimés en euros.
+
+5. **Simulation de la volatilité individuelle**  
+   Les rendements moyens sont utilisés, mais un retraité individuel peut connaître un parcours très différent selon l’année de départ. On pourrait intégrer :
+   - Des **simulations de scénarios de marché aléatoires** (type Monte Carlo).
+   - L’impact de **crises majeures** (2008, COVID, etc.) sur les pensions.
+
+6. **Effets macroéconomiques indirects**  
+   Par prudence, le modèle n’intègre pas les effets positifs que pourrait engendrer un système capitalisé massif. Mais on pourrait estimer :
+   - Les **externalités économiques** d’une surcapitalisation (hausse de l’investissement, de l’emploi, du PIB).
+   - Les **effets budgétaires indirects** (baisse des cotisations nécessaires, hausse de l’épargne libre, etc.).
+
+Ces améliorations pourraient faire l’objet d’un second volet ou d’un projet collaboratif open-source visant à affiner ce modèle de retraite capitalisée.
