@@ -176,39 +176,111 @@ Il est temps de remettre les faits au cœur du débat.
 
 ---
 
-## 8. 🔧 Pistes d'amélioration du modèle
+## 📉 8. Limites majeures et angles morts du modèle
 
-Ce rapport se veut une première exploration rigoureuse, mais perfectible. Plusieurs pistes pourraient enrichir ou affiner la simulation actuelle :
+Ce rapport pose les bases d’une alternative structurelle, mais certains aspects importants n’ont volontairement pas été modélisés. Ils constituent des **points de vigilance essentiels** pour tout débat sérieux autour d’un modèle capitalisé.
 
-1. **Diversification des profils simulés**  
-   Le modèle repose actuellement sur un profil médian unique. Il serait pertinent d’introduire :
-   - Un **salarié au SMIC**, pour estimer les effets redistributifs nécessaires.
-   - Un **profil du dernier quartile**, afin d’évaluer la contribution et la pension attendue des salaires plus élevés.
-   - Un **travailleur indépendant** ou un **agent public**, dont les régimes et trajectoires de cotisation diffèrent.
+### Le risque de « sequence of returns »
 
-2. **Alignement avec une estimation réelle de retraite**  
-   La comparaison repose sur une pension médiane, qui ne reflète pas nécessairement la pension d’un profil ayant exactement le parcours simulé (salaire médian, carrière complète). Une estimation plus fine pourrait être obtenue via :
-   - Le **simulateur officiel** (ex. [info-retraite.fr](https://www.info-retraite.fr/)).
-   - Une **modélisation interne des trimestres et règles de calcul du régime actuel**.
+Dans un système capitalisé, **le moment où l’on prend sa retraite compte autant que le capital accumulé**.  
+Deux retraités ayant exactement le même portefeuille peuvent toucher des pensions très différentes selon la conjoncture au moment de leur départ.
 
-3. **Optimisation des allocations**  
-   Les portefeuilles testés (50/50 et 75/25) sont fixes dans le temps. Des alternatives dynamiques pourraient être testées :
-   - **Allocations évolutives avec l’âge** (plus agressives en début de carrière, plus prudentes à l’approche de la retraite).
-   - **Rééquilibrage annuel**, pour refléter une gestion pilotée type fonds souverain.
+> Si les trois premières années de retraite coïncident avec une crise (comme en 2001, 2008 ou 2022), le capital fond rapidement et un taux de retrait de 9 % devient insoutenable.
 
-4. **Intégration du risque de change**  
-   Les indices S&P 500 et WGBI sont exprimés en dollars. Une approche plus réaliste pour un cotisant en euros pourrait inclure :
-   - La **conversion des rendements historiques en euros** via le taux de change EUR/USD.
-   - L’utilisation d’indices comparables européens exprimés en euros.
+Ce phénomène, bien connu sous le nom de *sequence of returns risk*, est l’une des principales limites de la capitalisation individuelle. Il explique en partie l’**aversion au risque élevée des opinions publiques** sur ce sujet.
 
-5. **Simulation de la volatilité individuelle**  
-   Les rendements moyens sont utilisés, mais un retraité individuel peut connaître un parcours très différent selon l’année de départ. On pourrait intégrer :
-   - Des **simulations de scénarios de marché aléatoires** (type Monte Carlo).
-   - L’impact de **crises majeures** (2008, COVID, etc.) sur les pensions.
+Nous ne l’avons pas modélisé ici, mais il devrait impérativement l’être dans une version avancée du modèle (voir section suivante).
 
-6. **Effets macroéconomiques indirects**  
-   Par prudence, le modèle n’intègre pas les effets positifs que pourrait engendrer un système capitalisé massif. Mais on pourrait estimer :
-   - Les **externalités économiques** d’une surcapitalisation (hausse de l’investissement, de l’emploi, du PIB).
-   - Les **effets budgétaires indirects** (baisse des cotisations nécessaires, hausse de l’épargne libre, etc.).
 
-Ces améliorations pourraient faire l’objet d’un second volet ou d’un projet collaboratif open-source visant à affiner ce modèle de retraite capitalisée.
+### La difficulté de transition entre systèmes
+
+Le débat ne porte pas seulement sur « quel système est le meilleur », mais sur **comment passer de l’un à l’autre sans sacrifier une génération**.
+
+Aujourd’hui, les cotisations des actifs financent directement les pensions.  
+Demander aux mêmes actifs de capitaliser en parallèle reviendrait à leur imposer **une double charge**, politiquement et socialement intenable.
+
+> C’est le vrai talon d’Achille de tout projet de bascule vers la capitalisation à grande échelle : **qui finance la transition, et comment ?**
+
+Bien que ce rapport se concentre sur les performances d’un système capitalisé à maturité, **tout scénario réaliste devra intégrer une phase de cohabitation, de montée en charge progressive, et d'arbitrages sociaux complexes**.
+
+---
+
+## 9. 🔧 Pistes d’amélioration du modèle
+
+Cette étude constitue une première base rigoureuse, mais simplifiée. Elle vise avant tout à fournir des ordres de grandeur.  
+Plusieurs extensions ou affinement du modèle pourraient être envisagés pour mieux intégrer les limites évoquées précédemment et améliorer la robustesse de l’analyse.
+
+### Intégration de scénarios de marché aléatoires (volatilité individuelle)
+
+Pour mieux représenter le risque réel vécu par un retraité individuel — notamment le **risque de sequence of returns** — il serait pertinent d'ajouter :
+
+- Des simulations aléatoires de marchés via **méthodes Monte Carlo** ;
+- Des scénarios historiques de crise (ex. départ à la retraite en 2001, 2008 ou 2022) ;
+- Une analyse de sensibilité du taux de retrait (ex. 5%, 7%, 9%) selon la conjoncture.
+
+Cela permettrait d’identifier les années de départ « à haut risque » et de mieux quantifier la soutenabilité réelle du modèle.
+
+---
+
+### Modélisation d’un mécanisme de transition
+
+Le plus grand défi d’un passage vers la capitalisation est la **double charge temporaire** pour les actifs. Il est essentiel d’intégrer des scénarios de transition réalistes :
+
+- Phase de cohabitation entre répartition et capitalisation (30 à 40 ans) ;
+- Simulation de financements transitoires (TVA dédiée, dette, prélèvement exceptionnel, etc.) ;
+- Étude de l’impact générationnel pour éviter toute « génération sacrifiée ».
+
+---
+
+### Diversification des profils simulés
+
+Le modèle actuel se base sur un salarié médian. Pour une vision plus représentative :
+
+- Ajouter un profil au SMIC et un profil cadre (quartile supérieur) ;
+- Simuler un travailleur indépendant ou un fonctionnaire (cotisations et carrières différentes) ;
+- Étudier l’impact redistributif d’un filet de sécurité universel (pension minimale garantie).
+
+---
+
+### Optimisation des allocations d’actifs
+
+Les portefeuilles simulés sont statiques (50/50 et 75/25). Pour plus de réalisme :
+
+- Implémenter une gestion pilotée (plus agressive en début de carrière, plus prudente à l’approche de la retraite) ;
+- Rééquilibrage annuel automatique ;
+- Introduction d’actifs alternatifs (immobilier, private equity, etc.).
+
+---
+
+### Intégration du risque de change
+
+Le S&P 500 et le WGBI sont exprimés en dollars, alors que les cotisations sont en euros. Deux options :
+
+- Convertir les rendements en euros via le taux EUR/USD historique ;
+- Remplacer ces indices par des proxies européens (ex. Euro Stoxx 50, indices obligataires en EUR).
+
+---
+
+### Estimation des effets macroéconomiques positifs
+
+Le modèle est volontairement conservateur et **n’intègre pas les effets systémiques positifs** que pourrait générer un modèle capitalisé à grande échelle. Ces effets mériteraient d’être estimés :
+
+- Hausse de l’investissement privé et de la capitalisation boursière nationale ;
+- Réduction possible des prélèvements obligatoires ;
+- Hausse de l’épargne individuelle libre (hors retraite) ;
+- Baisse de la dette publique via désengagement partiel de l’État.
+
+---
+
+Ces évolutions pourraient faire l’objet d’un second volet, ou d’un projet collaboratif open-source visant à enrichir ce modèle de retraite capitalisée.
+
+---
+
+## 🙏 Remerciements
+
+Je tiens à remercier sincèrement celles et ceux qui ont pris le temps de formuler des retours critiques constructifs, permettant d’identifier avec lucidité les limites de ce travail.
+
+En particulier, merci à **Xavier Delmas** pour sa rigueur intellectuelle et la pertinence de ses remarques.
+
+Leur contribution a permis d’enrichir ce rapport et de clarifier les points clés qui méritent d’être approfondis dans la suite du projet.
+
