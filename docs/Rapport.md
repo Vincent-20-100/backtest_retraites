@@ -98,10 +98,10 @@ Un tel stock de capital permettrait d’assurer une soutenabilité structurelle,
 ## 4. 📊 Visualisations clés
 
 ### Performance des différents portefeuilles
-![SP500](../charts\perf_portefeuilles_red.png)
+![SP500](https://raw.githubusercontent.com/Vincent-20-100/backtest_retraites/refs/heads/main/charts/perf_portefeuilles_red.png)
 
 ### Comparaison des pensions versées selon les modèles
-![SP500](../charts\comparaison_pensions_red.png)
+![SP500](https://raw.githubusercontent.com/Vincent-20-100/backtest_retraites/refs/heads/main/charts/comparaison_pensions_red.png)
 
 ---
 
