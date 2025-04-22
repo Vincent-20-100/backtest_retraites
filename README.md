@@ -30,14 +30,14 @@ Ce projet repose sur une série de **choix méthodologiques prudents** afin d’
 ### Hypothèses retenues :
 - Utilisation du CAC 40 TR comme proxy d’un fonds souverain français (scénario conservateur).
 - Utilisation du S&P 500 TR comme proxy de performance haute — non pas pour idéaliser les rendements américains, mais pour représenter une trajectoire réaliste qu’aurait pu suivre un CAC 40 soutenu par des décennies de capitalisation massive. Ce choix permet d’estimer une fourchette haute crédible, dans l’hypothèse où un fonds souverain français aurait contribué à surcapitaliser durablement les entreprises nationales.
-- Taux de cotisation fixe sur 40 ans, sans optimisation ni arbitrage.
-- Hypothèse de retrait prudente : 9 %, calibrée sur une durée moyenne de retraite (25 ans).
+- Taux de cotisation historique appliqué : de 15 % en 1985 à 24 % en 2025 (part patronale + salariale ; source INCEE).
+- Hypothèse de retrait : 9 %, calibrée sur une durée moyenne de retraite (25 ans) et pour assurer la pérennité du fond et maximiser les pensions.
 - Prise en compte de 0,5% de frais de gestion.
 - Backfill du CAC 40 TR entre 1985 et 1990 (données manquantes).
 - Utilisation du WGBI comme proxy obligataire (faute de données françaises longues).
 
 ### Effets bénéfiques non modélisés (mais potentiellement favorables) :
-- Surcapitalisation des entreprises françaises via l’épargne retraite (effet macro positif absent du modèle).
+- Surcapitalisation des entreprises françaises via le fond, une part est prise en compte dans la version optimiste (S&P 500 comme proxi), mais on peut aussi penser à une augmentation des salaires et de l'économie en général grâce à ce surplus d'investissements.
 - Réduction potentielle des cotisations grâce à la performance, stimulant la consommation, l’épargne libre, ou l’emploi.
 
 ---
