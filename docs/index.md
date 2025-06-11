@@ -280,6 +280,6 @@ Ces évolutions pourraient faire l’objet d’un second volet, ou d’un projet
 
 Je tiens à remercier sincèrement celles et ceux qui ont pris le temps de formuler des retours critiques constructifs, permettant d’identifier avec lucidité les limites de ce travail.
 
-En particulier, merci à **Nicolas Chéron** pour avoir relayé cette étude dans sa [newslatter#77](https://www.nicolascheron.fr/articles/comment-doubler-votre-retraite/?ref=nicolas-cheron-newsletter), et à **Xavier Delmas** pour sa rigueur intellectuelle et la pertinence de ses remarques.
+En particulier, merci à **Nicolas Cheron** pour avoir relayé cette étude dans sa [newslatter#77](https://www.nicolascheron.fr/articles/comment-doubler-votre-retraite/?ref=nicolas-cheron-newsletter), et à **Xavier Delmas** pour sa rigueur intellectuelle et la pertinence de ses remarques.
 
 Leur contribution a permis d’enrichir ce rapport et de clarifier les points clés qui méritent d’être approfondis dans la suite du projet.
